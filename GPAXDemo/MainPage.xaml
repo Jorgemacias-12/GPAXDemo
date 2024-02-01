@@ -1,24 +1,49 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="GPAXDemo.MainPage">
+             x:Class="GPAXDemo.MainPage"
+             BackgroundColor="#2d2e2e">
 
     <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        <Frame Padding="20" BackgroundColor="#28afb0">
+            <Label Text="GPAXDemo" TextColor="Black" FontSize="40" HorizontalTextAlignment="Center"/>
         </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
+
+        <StackLayout Padding="20">
+            <Label Text="This app is only for testing purposes only" FontSize="Large" FontAttributes="Bold" />
+        </StackLayout>
+
+        <StackLayout Padding="20" BackgroundColor="#9395d3" Margin="10">
+            <Label x:Name="Lbl_Location" Text="GPS: " />
+        </StackLayout>
+
+        <StackLayout Padding="20" BackgroundColor="#3772ff" Margin="10">
+            <Label Text="Testing audio recording :P" FontSize="20"/>
+
+            <ScrollView>
+                <StackLayout Orientation="Horizontal">
+                    <Button 
+                        x:Name="Btn_Record"
+                        Text="Record" 
+                        BackgroundColor="#fdca40" 
+                        TextColor="black"
+                    />
+                    
+                    <Button 
+                        Text="Stop" 
+                        BackgroundColor="#bb2929"
+                        x:Name="Btn_Stop"
+                    />
+                    
+                    <Button 
+                        Text="Play" 
+                        BackgroundColor="#1ed760"
+                        x:Name="Btn_Play"    
+                    />
+                    
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
     </StackLayout>
 
 </ContentPage>
