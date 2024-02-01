@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linearLayout1"
+    android:background="#1c2541">
+    <FrameLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="92.0dp"
+        android:id="@+id/frameLayout1"
+        android:background="#5bc0be">
+        <TextView
+            android:text="Apoco si tiling prueba"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView1"
+            android:textColor="#ffffffff"
+            android:textSize="36dp"
+            android:gravity="center"
+            android:background="#5bc0be"/>
+
+    </FrameLayout>
+    <TextView
+        android:text="Recording test program :P"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textColor="#ffffffff"
+        android:textSize="20dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:padding="10dp">
+        <Button
+            android:text="Record"
+            android:layout_width="156.8dp"
+            android:layout_height="match_parent"
+            android:id="@+id/start_record"
+            android:background="#fdca40"
+            android:textColor="#000"/>
+        <Button
+            android:text="Stop"
+            android:layout_width="108.8dp"
+            android:layout_height="match_parent"
+            android:id="@+id/stop_record"
+            android:background="#bb2929"
+            android:textColor="#fff" />
+        <Button
+            android:text="Play"
+            android:layout_width="94.0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/play_record"
+            android:background="#1ed760"
+            android:textColor="#000"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
