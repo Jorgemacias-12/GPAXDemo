@@ -43,7 +43,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/linearLayout2"
-        android:padding="10dp">
+        android:padding="10dp"
+        >
         <Button
             android:text="Record"
             android:layout_width="156.8dp"
